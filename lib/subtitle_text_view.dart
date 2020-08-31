@@ -27,16 +27,20 @@ class SubtitleTextView extends StatelessWidget {
               children: <Widget>[
                 subtitleStyle.hasBorder
                     ? Center(
-                        child: Text(
-                          state.subtitle.text,
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: subtitleStyle.fontSize,
-                            foreground: Paint()
-                              ..style = subtitleStyle.borderStyle.style
-                              ..strokeWidth =
-                                  subtitleStyle.borderStyle.strokeWidth
-                              ..color = subtitleStyle.borderStyle.color,
+                        child: Container(
+                          padding: subtitleStyle.padding,
+                          color: subtitleStyle.backgroundColor,
+                          child: Text(
+                            state.subtitle.text,
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: subtitleStyle.fontSize,
+                              foreground: Paint()
+                                ..style = subtitleStyle.borderStyle.style
+                                ..strokeWidth =
+                                    subtitleStyle.borderStyle.strokeWidth
+                                ..color = subtitleStyle.borderStyle.color,
+                            ),
                           ),
                         ),
                       )
@@ -44,13 +48,17 @@ class SubtitleTextView extends StatelessWidget {
                         child: null,
                       ),
                 Center(
-                  child: Text(
-                    state.subtitle.text,
-                    key: ViewKeys.SUBTITLE_TEXT_CONTENT,
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: subtitleStyle.fontSize,
-                      color: subtitleStyle.textColor,
+                  child: Container(
+                    padding: subtitleStyle.padding,
+                    color: subtitleStyle.backgroundColor,
+                    child: Text(
+                      state.subtitle.text,
+                      key: ViewKeys.SUBTITLE_TEXT_CONTENT,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: subtitleStyle.fontSize,
+                        color: subtitleStyle.textColor,
+                      ),
                     ),
                   ),
                 ),

@@ -8,6 +8,8 @@ class SubtitleStyle {
   final double fontSize;
   final Color textColor;
   final SubtitlePosition position;
+  final Color backgroundColor;
+  final EdgeInsetsGeometry padding;
 
   const SubtitleStyle({
     this.hasBorder = false,
@@ -15,5 +17,7 @@ class SubtitleStyle {
     this.fontSize = 16,
     this.textColor = Colors.black,
     this.position = const SubtitlePosition(),
+    this.backgroundColor = Colors.transparent,
+    this.padding = EdgeInsets.zero,
   });
 }
