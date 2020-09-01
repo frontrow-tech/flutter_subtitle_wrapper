@@ -35,6 +35,7 @@ class SubtitleTextView extends StatelessWidget {
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               fontSize: subtitleStyle.fontSize,
+                              shadows: subtitleStyle.shadows ?? <Shadow>[],
                               foreground: Paint()
                                 ..style = subtitleStyle.borderStyle.style
                                 ..strokeWidth =
@@ -56,6 +57,7 @@ class SubtitleTextView extends StatelessWidget {
                       key: ViewKeys.SUBTITLE_TEXT_CONTENT,
                       textAlign: TextAlign.center,
                       style: TextStyle(
+                        shadows: subtitleStyle.shadows ?? <Shadow>[],
                         fontSize: subtitleStyle.fontSize,
                         color: subtitleStyle.textColor,
                       ),

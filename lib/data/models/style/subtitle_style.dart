@@ -10,6 +10,7 @@ class SubtitleStyle {
   final SubtitlePosition position;
   final Color backgroundColor;
   final EdgeInsetsGeometry padding;
+  final List<Shadow> shadows;
 
   const SubtitleStyle({
     this.hasBorder = false,
@@ -19,5 +20,6 @@ class SubtitleStyle {
     this.position = const SubtitlePosition(),
     this.backgroundColor = Colors.transparent,
     this.padding = EdgeInsets.zero,
+    this.shadows,
   });
 }
