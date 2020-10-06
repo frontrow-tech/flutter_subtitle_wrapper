@@ -20,7 +20,7 @@ dependencies:
   flutter:
     sdk: flutter
   chewie: ^0.9.10
-  video_player: ^0.10.9+1
+  video_player: ^0.11.0
   subtitle_wrapper_package:
     path: ../
   # The following adds the Cupertino Icons font to your application.
