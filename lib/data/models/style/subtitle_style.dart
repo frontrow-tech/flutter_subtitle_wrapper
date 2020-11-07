@@ -11,15 +11,16 @@ class SubtitleStyle {
   final Color backgroundColor;
   final EdgeInsetsGeometry padding;
   final List<Shadow> shadows;
+  final TextStyle textStyle;
 
-  const SubtitleStyle({
-    this.hasBorder = false,
-    this.borderStyle = const SubtitleBorderStyle(),
-    this.fontSize = 16,
-    this.textColor = Colors.black,
-    this.position = const SubtitlePosition(),
-    this.backgroundColor = Colors.transparent,
-    this.padding = EdgeInsets.zero,
-    this.shadows,
-  });
+  const SubtitleStyle(
+      {this.hasBorder = false,
+      this.borderStyle = const SubtitleBorderStyle(),
+      this.fontSize = 16,
+      this.textColor = Colors.black,
+      this.position = const SubtitlePosition(),
+      this.backgroundColor = Colors.transparent,
+      this.padding = EdgeInsets.zero,
+      this.shadows,
+      this.textStyle});
 }

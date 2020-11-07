@@ -33,15 +33,16 @@ class SubtitleTextView extends StatelessWidget {
                           child: Text(
                             state.subtitle.text,
                             textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: subtitleStyle.fontSize,
-                              shadows: subtitleStyle.shadows ?? <Shadow>[],
-                              foreground: Paint()
-                                ..style = subtitleStyle.borderStyle.style
-                                ..strokeWidth =
-                                    subtitleStyle.borderStyle.strokeWidth
-                                ..color = subtitleStyle.borderStyle.color,
-                            ),
+                            style: subtitleStyle.textStyle ??
+                                TextStyle(
+                                  fontSize: subtitleStyle.fontSize,
+                                  shadows: subtitleStyle.shadows ?? <Shadow>[],
+                                  foreground: Paint()
+                                    ..style = subtitleStyle.borderStyle.style
+                                    ..strokeWidth =
+                                        subtitleStyle.borderStyle.strokeWidth
+                                    ..color = subtitleStyle.borderStyle.color,
+                                ),
                           ),
                         ),
                       )
