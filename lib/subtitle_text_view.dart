@@ -50,17 +50,21 @@ class SubtitleTextView extends StatelessWidget {
                         child: null,
                       ),
                 Center(
-                  child: Container(
-                    padding: subtitleStyle.padding,
-                    color: subtitleStyle.backgroundColor,
-                    child: Text(
-                      state.subtitle.text,
-                      key: ViewKeys.SUBTITLE_TEXT_CONTENT,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        shadows: subtitleStyle.shadows ?? <Shadow>[],
-                        fontSize: subtitleStyle.fontSize,
-                        color: subtitleStyle.textColor,
+                  child: MediaQuery(
+                    data: MediaQuery.of(context).copyWith(textScaleFactor: 1),
+                    child: Container(
+                      padding: subtitleStyle.padding,
+                      color: subtitleStyle.backgroundColor,
+                      child: Text(
+                        state.subtitle.text,
+                        key: ViewKeys.SUBTITLE_TEXT_CONTENT,
+                        textAlign: TextAlign.center,
+                        style: subtitleStyle.textStyle ??
+                            TextStyle(
+                              shadows: subtitleStyle.shadows ?? <Shadow>[],
+                              fontSize: subtitleStyle.fontSize,
+                              color: subtitleStyle.textColor,
+                            ),
                       ),
                     ),
                   ),
