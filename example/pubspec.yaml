@@ -19,13 +19,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  chewie: ^0.9.10
-  video_player: 0.11.1+2
+  chewie: ^0.12.0
+  video_player: ^1.0.0
   subtitle_wrapper_package:
     path: ../
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^0.1.2
+  cupertino_icons: ^1.0.0
 
 dev_dependencies:
   flutter_test:
