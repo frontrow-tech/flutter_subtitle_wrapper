@@ -4,24 +4,25 @@ version: 1.0.2
 homepage: https://github.com/Joran-Dob/flutter_subtitle_wrapper
 
 environment:
-  sdk: ">=2.2.2 <3.0.0"
+  sdk: ">=2.11.0 <3.0.0"
+  flutter: ">=3.0.5 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
   # Custom video player with custom loadControl for exoplayer
-  video_player: #^1.0.0
+  video_player: #2.4.6 fr/buffer_controls
     git:
-      url: https://github.com/ayush221b/plugins.git
+      url: https://github.com/frontrow-tech/plugins.git
       path: packages/video_player/video_player
-      ref: f93cfee154c0eea639276669f72283fe9db5b2a9
+      ref: 4fd6ae5d0d886b79497f33a41dad32a487ee58f7
 
-  http: ^0.12.0+2
-  bloc: ^6.0.0
-  flutter_bloc: ^6.0.0
-  equatable: ^1.2.0
-  http_parser: ^3.1.4
+  http: ^0.13.5
+  bloc: ^8.1.0
+  flutter_bloc: ^8.1.1
+  equatable: ^2.0.3
+  http_parser: ^4.0.1
 
 dev_dependencies:
   flutter_test:
